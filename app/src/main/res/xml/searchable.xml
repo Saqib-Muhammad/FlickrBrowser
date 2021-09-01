@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable xmlns:android="http://schemas.android.com/apk/res/android"
+    android:hint="@string/searchable_hint"
+    android:label="@string/title_activity_search"/>
+
+<!--in fact google have been discouraging the use of
+global search, and suggest using app indexing instead,
+you can pretty much ignore any mention of global
+search now in the android documentation
+
+
+Starting today, we will begin to use information from
+indexed apps as a factor in ranking for signed-in users
+who have the app installed. As a result, we may now
+surface content from indexed apps more prominently in
+search. To find out how to implement App Indexing,
+ which allows us to surface this information in
+ search results, have a look at our step-by-step
+ guide on the developer site.-->

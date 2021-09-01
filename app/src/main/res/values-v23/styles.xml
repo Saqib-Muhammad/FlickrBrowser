@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <!--Now this NoActionBar theme
+        doesn't inherit from the one in the original style's file
+        So it's completely redefining AppTheme.NoActionBar
+        Now AppTheme.NoActionBar extends AppTheme
+        so it does inherit the attributes specified in AppTheme. And our v23 style
+        also inherits the attributes from AppTheme
+        but it's not inheriting anything from the original AppTheme
+        dot NoActionBar style.-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:colorBackgroundFloating">@color/primary</item>
+<!--    <item name="android:colorBackgroundFloating">@color/android:transparent</item>-->
+<!--    <item name="android:colorBackgroundFloating">@android:color/transparent</item>-->
+<!--    <item name="android:colorBackgroundFloating">@color/accent</item>-->
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+
+    </style>
+</resources>
+
+<!--Now the @ means that we're referring to a resource, and @color means the resource is found in a color resource.-->
+<!--
+So going back to the v23 styles.xml, the attribute we're setting here is this android
+    colon colorBackgroundFloating.
+    Now the attribute's called colorBackgroundFloating, which sets the default background colour for floating
+    components.
+    Now floating components are things like dialogue's, pop-ups and our card view widget.
+    Now if the attribute's called colorBackgroundFloating, why have I put Android colon in front of it,
+    in other words, this bit here.
+    And for that matter, why haven't I used android colon prefix up here for windows action bar and windows
+    no title. Well the reason's down to where these attributes live,
+    if you like.
+    Now we're using AppCompat in this app, which means that a lot of the attributes aren't coming from the
+    Android framework.
+    Instead they exist in the compatibility libraries.
+    Now the libraries are linked into the app, so these attributes exist in the app itself-->
+
+<!--You can see this on line 6. Now as we now know, that means that the primary colours values, looked up in our app's
+    namespace, in one other colour resources.
+    Now there are also values existing in the android colon namespace, values that are actually part of Android.
+    So a useful one to use sets the colour to transparent. So if I come over here and with @color, I can change
+    that and make that android colon transparent.
+    Now if we run this just to check that it's going to work we should find our card view will be transparent.
+    Obviously I'm running this on the API 26 emulator as well.
+
+
+    The point was to show you a value coming from the Android framework. Now at android colon color means
+    that we're referring to a resource that's defined in the Android namespace,
+    so it's built into Android and it's called Transparent.
+    Now the @ means that we're referring to a resource.
+    So we could do something like this, we could do @android:color/transparent, and we get a similar result
+    if we run this app. And we'll just go over to the emulator and open it up, and you can see there we've still got a transparent
+    card view. And if we want to use our own colour of course, we remove the namespace.
+    We still use the @ to indicate that it's a resource that we're referring to, but we could change it
+    to @color, and then
+    for example, accent, and if I run that after changing that,
+    you can see now we've got a yellow background in the card view. So basically this time we've referred to a colour
+    resource called accent, and that's defined in our styles file. The system needed to look there because we didn't specify-->
+
+<!--Alright so it's time to move on now and do a bit more experimenting.
+    You can find out more about styles though, and also how to find out the names of properties that you
+    may need to change in a couple of Google guides.
+    Now the first one is Styles and Themes, and I'll just bring that up on the screen,
+    very useful site.
+    There's also a link to the styles guide which will be quite useful for you to check out,-->

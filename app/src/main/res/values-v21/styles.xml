@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:navigationBarColor">@color/primary_dark</item>
+    </style>
+</resources>
+
+<!--And I definitely don't suggest that you try to memorise all of this. So it's quite likely that you'll
+    want to create another styles file, using an earlier API than you've already defined.
+    And that's where the comment I made earlier, that these individual API version files don't inherit
+    from the earlier ones, becomes important.
+    Now as you can see in the v23 styles.xml file,
+    we've redefined the AppTheme, dot NoActionBar theme.
+    Now it does inherit from the AppTheme style defined in the original styles.xml.
+    However it doesn't inherit anything from the AppTheme.NoActionBar style in there.
+    When we create a v21 styles file, what we have to do is copy the complete AppTheme.NoActionBar theme
+    from the original file, and then modify it.
+    So let's actually do that.-->

@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="se.saqib.flickrbrowser.MainActivity">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="@string/action_search"
+        app:showAsAction="ifRoom" />
+<!--    app:actionViewClass="android.widget.SearchView"-->
+
+</menu>
+
+<!--ifRoom is the preferred option, when you
+want to show the icon in the toolbar.
+"only place this item in the app bar if there room for it".
+introduced in api 11-->
+
+<!--most of the attributes for the menu
+item are in the android namespace.
+and that are available from API 1
+introduced in api 11 but to makes it
+available on older devices, the property
+also added to the support libraries.
+
+
+Now remember that we're using the support toolbar,
+so the property that we want is in our app's namespace, not in the Android namespace.-->
