@@ -16,3 +16,9 @@ In this app we cover the following topics:
 * Listening for taps on a RecyclerView,and the purpose of a GestureDetector.
 * Themes and Styles, and how they work for different versions of Android.
 * Our app will allow us to search for different types of photos from Flickr.
+
+![1flickrbrowser](https://user-images.githubusercontent.com/42799047/131865899-f1dfd308-ca1c-413e-b6d6-179051f4818b.png)
+
+![2flickrbrowser](https://user-images.githubusercontent.com/42799047/131865934-8ed9518e-fffe-46b6-81e1-ebe297e5deee.png)
+
+![3flickrbrowser](https://user-images.githubusercontent.com/42799047/131865951-d40b70df-4ba4-4bd6-8439-165d2e80d07e.png)
